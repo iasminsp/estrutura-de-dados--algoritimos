@@ -4,9 +4,9 @@ public class Principal{
         Fila<String> fila = new Fila<String>("letras");
 
         fila.enfileirar("a");
-        fila.imprimeFila();
         fila.enfileirar("b");
-        fila.imprimeFila();
+        fila.enfileirar("c");
+        
         fila.desenfileirar();
         fila.imprimeFila();
         

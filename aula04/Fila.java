@@ -3,7 +3,7 @@ class Fila<T>{
     private<T>No ultimoNo;
     private String nomeFila;
 
-    public  fila(){
+    public  Fila(){
         this("fila");
     }
 
@@ -31,8 +31,6 @@ class Fila<T>{
     }
         T dado= primeiroNo.getDado();
         primeiroNo=primeiroNo.getNextNo();
-
-
         if(primeiroNo==null){
             ultimoNo=null;
         }
@@ -40,16 +38,16 @@ class Fila<T>{
         
         public void imprimirFila(){
             if(primeiroNo==null){
-                System.out.Println("lista vazia" );
-                return null
+                System.out.println("lista vazia" );
             }else{
-                System.out.Println("Dados da fila %s \n"+this.nomeFila);
+                System.out.println("Dados da fila %s \n"+this.nomeFila);
                 No<T> aux = primeiroNo;
                 while(aux != null){
-                    System.ou.println("-%\n",aux.getDado());
+                    System.ou.printf("{"+aux.getDado()"+}");
                     aux=aux.nextNo();
                 }
             }
+            System.out.println();
         }
     
 
